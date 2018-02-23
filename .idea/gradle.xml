@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/gank_common" />
+            <option value="$PROJECT_DIR$/gank_data" />
+            <option value="$PROJECT_DIR$/gank_day_details" />
+            <option value="$PROJECT_DIR$/gank_http" />
+            <option value="$PROJECT_DIR$/gank_main" />
+            <option value="$PROJECT_DIR$/gank_startover" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

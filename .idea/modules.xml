@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VictorGank.iml" filepath="$PROJECT_DIR$/VictorGank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gank_common/gank_common.iml" filepath="$PROJECT_DIR$/gank_common/gank_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gank_data/gank_data.iml" filepath="$PROJECT_DIR$/gank_data/gank_data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gank_day_details/gank_day_details.iml" filepath="$PROJECT_DIR$/gank_day_details/gank_day_details.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gank_http/gank_http.iml" filepath="$PROJECT_DIR$/gank_http/gank_http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gank_main/gank_main.iml" filepath="$PROJECT_DIR$/gank_main/gank_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gank_startover/gank_startover.iml" filepath="$PROJECT_DIR$/gank_startover/gank_startover.iml" />
+    </modules>
+  </component>
+</project>

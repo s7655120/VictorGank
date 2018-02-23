@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+    defaultConfig {
+        applicationId "com.victor.gank"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layouts/Base',
+                    'src/main/res/layouts/About',
+                    'src/main/res/layouts/Welfare/WelfareList',
+                    'src/main/res/layouts/Main/Main',
+                    'src/main/res/layouts/Main/HomePage',
+                    'src/main/res/layouts/Main/FreeReading',
+                    'src/main/res/layouts/WebView',
+//                    'src/main/res/layouts/StartOver/GuidePage',
+//                    'src/main/res/layouts/StartOver/Welcome',
+//                    'src/main/res/layouts/LoginAndRegister/Base',
+//                    'src/main/res/layouts/LoginAndRegister/CodeLogin',
+//                    'src/main/res/layouts/LoginAndRegister/Login',
+//                    'src/main/res/layouts/LoginAndRegister/Register',
+//                    'src/main/res/layouts/LoginAndRegister/RegisterOrChangePwd',
+//                    'src/main/res/layouts/Main/MyInfo/Base',
+//                    'src/main/res/layouts/Main/MyInfo/ShopPage',
+//                    'src/main/res/layouts/Main/MyInfo/UserPage',
+//                    'src/main/res/layouts/Main/MyInfo/MyInfoPage',
+//                    'src/main/res/layouts/User/EditUserInfo',
+//                    'src/main/res/layouts/Settings/CodeInfo',
+//                    'src/main/res/layouts/Settings/AboutUs',
+//                    'src/main/res/layouts/Settings/Settings'
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    // glide 图片加载库
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    // 请求库retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'org.jsoup:jsoup:1.10.3'
+    implementation project(':gank_common')
+}

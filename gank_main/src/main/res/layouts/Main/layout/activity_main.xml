@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dp_45"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentBottom="true">
+
+        <View
+            style="@style/common_divider"
+            android:layout_above="@+id/ll" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_home_page"
+                android:layout_width="@dimen/dp_null"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawablePadding="@dimen/dp_2"
+                android:gravity="center"
+                android:text="@string/main_home_page"
+                android:drawableTop="@drawable/selector_home_page"
+                android:textColor="@drawable/selector_main_text_color"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_free_reading"
+                android:layout_width="@dimen/dp_null"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawablePadding="@dimen/dp_2"
+                android:gravity="center"
+                android:text="@string/main_free_reading"
+                android:textColor="@drawable/selector_main_text_color"
+                android:drawableTop="@drawable/selector_my_info"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
