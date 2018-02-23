@@ -175,4 +175,17 @@ public class GankData {
     public void setUpdated_at(String updated_at) {
         this.updated_at = updated_at;
     }
+
+    public Date getDate(){
+        int end = publishedAt.indexOf("T");
+        Date date = new Date();
+        return date.copyDate(publishedAt.substring(0, end));
+    }
+
+    @Override
+    public String toString() {
+        return "GankData : _id = " + _id +", content = " + content + ", created_at + "
+                + created_at + ", publishedAt = " + publishedAt + ", rand_id = " + rand_id
+                + "， title + " + title + ", updated_at = " + updated_at;
+    }
 }
